@@ -8,6 +8,7 @@
   --yellow: #ffe37e;
   --red: #e01b4c;
   --green: #58918C;
+  --pink: #F561AD;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -115,18 +116,18 @@ textarea {
   min-height: 120px;
   resize: none;
 }
-fieldset {
-  display: flex;
-  flex-direction: column;
-}
-fieldset label {
+
+form label {
   font-weight: 700;
 }
-fieldset input, fieldset textarea {
+form input, form textarea {
   margin: .25em 0;
   padding: .5em .6em;
-  box-shadow: inset 0 1px 3px var(--red);
+  box-shadow: 0 1px 3px var(--red);
   border-radius: 8px;
   border: 2px solid var(--red);
-
+}
+form input:focus-visible, form textarea:focus-visible {
+  outline: 3px solid var(--pink);
+  box-shadow: inset 0 -2px 4px var(--pink);
 }

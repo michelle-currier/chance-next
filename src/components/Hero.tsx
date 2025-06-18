@@ -20,7 +20,7 @@ export default function Hero() {
         <h1
           className={` ${luckiestGuy} text-5xl font-bold drop-shadow-sm text-white`}
         >
-          Chance in Hell Snoballs
+          CHANCE IN HELL SNOBALLS
         </h1>
         <h2 className="text-3xl font-bold my-4 text-teal-800">
           805 Louisa St. Suite 102, New Orleans, LA 70117

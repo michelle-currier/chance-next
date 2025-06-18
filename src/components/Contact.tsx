@@ -64,7 +64,90 @@ export default function Contact() {
         >
           Contact Us
         </h1>
-        <form
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="flex flex-col">
+            <label htmlFor="fullname" className="text-sm font-medium">
+              Your Name
+            </label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              value={formData.fullname}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="email" className="text-sm font-medium">
+              Your Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="phone" className="text-sm font-medium">
+              Your Phone
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows={5}
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            className="mt-8 bg-gradient-to-r from-pink-500 to-pink-400  text-white font-semibold py-2 px-4 rounded-full inline-flex items-center"
+          >
+            Send Message
+          </button>
+        </form>
+
+        {status && (
+          <p
+            className={`mt-6 text-sm text-center ${
+              status.includes("successfully")
+                ? "text-green-500"
+                : "text-red-500"
+            }`}
+          >
+            {status}
+          </p>
+        )}
+
+        <div className="mt-12 text-center">
+          <p className="text-sm text-white">
+            Or, send us an email directly at{" "}
+            <a
+              href="mailto:donald.fernandez1@gmail.com"
+              className="text-teal-300 underline"
+            >
+              donald.fernandez1@gmail.com
+            </a>
+          </p>
+        </div>
+
+        {/* <form
           onSubmit={handleSubmit}
           method="POST"
           //action="/sendemail"
@@ -106,7 +189,7 @@ export default function Contact() {
               Send
             </button>
           </fieldset>
-        </form>
+        </form> */}
       </section>
     </>
   );

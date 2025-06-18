@@ -16,7 +16,7 @@ export default function Navbar() {
             className="w-full h-10 object-cover"
             loading="eager"
           /> */}
-          Chance in Hell Snoballs
+          CHANCE IN HELL SNOBALLS
         </TransitionLink>
       </div>
       <nav className="flex justify-end">
