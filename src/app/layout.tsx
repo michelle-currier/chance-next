@@ -19,10 +19,10 @@ export default function RootLayout({
     // <html lang="en" className={raleway.className}>
     <html lang="en">
       <body
-        className={` ${quicksand} h-full flex flex-col`}
+        className={` ${quicksand} h-full flex flex-col w-full mx-auto`}
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div>
+        <div className="">
           <Navbar />
           <main>{children}</main>
           <Footer />

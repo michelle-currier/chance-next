@@ -136,13 +136,13 @@ export default function Contact() {
         )}
 
         <div className="mt-12 text-center">
-          <p className="text-sm text-white">
+          <p>
             Or, send us an email directly at{" "}
             <a
               href="mailto:donald.fernandez1@gmail.com"
-              className="text-teal-300 underline"
+              className="text-teal-500 underline"
             >
-              donald.fernandez1@gmail.com
+              chanceinhellsnoballs@gmail.com
             </a>
           </p>
         </div>

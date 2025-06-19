@@ -1,6 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { TransitionButton } from "@/components/TransitionButton";
-import { luckiestGuy } from "@/app/utils/fonts";
+import { quicksand, cherryBombOne, luckiestGuy } from "@/app/utils/fonts";
 import Image from "next/image";
 
 import snoball from "./../images/snoball.png";
@@ -22,9 +22,11 @@ export default function Hero() {
         >
           CHANCE IN HELL SNOBALLS
         </h1>
-        <h2 className="text-3xl font-bold my-4 text-teal-800">
+        <h4
+          className={` ${cherryBombOne} text-3xl font-bold my-4 text-teal-400 drop-shadow-sm`}
+        >
           805 Louisa St. Suite 102, New Orleans, LA 70117
-        </h2>
+        </h4>
 
         <div className="flex flex-row">
           <TransitionButton href="/contact">

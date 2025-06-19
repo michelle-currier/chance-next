@@ -61,6 +61,9 @@ button {
     @apply ring-2 ring-pink-500;
   }
 }
+h3 {
+  font-size: 24px;
+}
 textarea {
   min-height: 120px;
   resize: none;
@@ -112,6 +115,20 @@ nav ul li a:hover {
   font-weight: 600;
   text-shadow:  1px 1px 3px #E9E9E9;
 }
+.footer i {
+  font-size: 36px;
+}
+.footer a {
+  color:#111;
+  text-decoration: none;
+}
+.footer a:hover {
+  color:#111;
+  text-decoration: none;
+  color: #F561AD;
+  text-shadow: -1px -1px 1px #fff, 0px 1px 0px rgba(0,0,0, 0.7), 1px 1px 11px rgba(0,0,0, 0.7);
+  transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
 textarea {
   min-height: 120px;
   resize: none;
@@ -130,4 +147,9 @@ form input, form textarea {
 form input:focus-visible, form textarea:focus-visible {
   outline: 3px solid var(--pink);
   box-shadow: inset 0 -2px 4px var(--pink);
+}
+
+img {
+  box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.39);
+border-radius: 12px;
 }

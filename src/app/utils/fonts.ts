@@ -22,4 +22,4 @@ const cherryBombOneFont = Cherry_Bomb_One({
 
   export const quicksand = quicksandFont.className;
   export const luckiestGuy = luckiestGuyFont.className;
-  export const cherryBombOne = cherryBombOneFont;
+  export const cherryBombOne = cherryBombOneFont.className;
