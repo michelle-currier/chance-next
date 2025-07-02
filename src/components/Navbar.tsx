@@ -26,9 +26,6 @@ export default function Navbar() {
         <nav className="flex justify-end">
           <ul className="flex space-x-8 m-6">
             <li>
-              <TransitionLink href="/">Home</TransitionLink>
-            </li>
-            <li>
               <TransitionLink href="#about">About</TransitionLink>
             </li>
             <li>

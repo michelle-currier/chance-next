@@ -8,7 +8,7 @@ import giveBack from "./../images/giveback.png";
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto max-w-7xl w-full px-8 py-16 about">
+    <section id="about" className="mx-auto max-w-7xl w-full px-8 py-12 about">
       <h2 className={`${luckiestGuy} text-4xl text-teal-700`}>
         Behind the scenes with Kitten and Lou
       </h2>
