@@ -57,10 +57,10 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <section className="max-w-3xl mx-auto p-6">
+    <div className="p-20" id="contact">
+      <section className="max-w-3xl mx-auto pt-6 pb-10">
         <h1
-          className={` ${luckiestGuy} text-3xl font-bold text-center text-teal-600 mb-8`}
+          className={` ${luckiestGuy} text-3xl font-bold text-center text-teal-600 mb-4`}
         >
           Contact Us
         </h1>
@@ -115,17 +115,28 @@ export default function Contact() {
               required
             />
           </div>
-          <button
-            type="submit"
-            className="mt-8 bg-gradient-to-r from-pink-500 to-pink-400  text-white font-semibold py-2 px-4 rounded-full inline-flex items-center"
-          >
-            Send Message
-          </button>
+          <div className="flex flex-row justify-between">
+            <button
+              type="submit"
+              className="bg-gradient-to-r from-pink-500 to-pink-400  text-white font-semibold py-2 px-4 rounded-full inline-flex items-start"
+            >
+              Send Message
+            </button>
+            <p className="mt-2">
+              Or, send us an email directly at{" "}
+              <a
+                href="mailto:chanceinhellsnoballs@gmail.com"
+                className="text-teal-500 underline"
+              >
+                chanceinhellsnoballs@gmail.com
+              </a>
+            </p>
+          </div>
         </form>
 
         {status && (
           <p
-            className={`mt-6 text-sm text-center ${
+            className={`mt-6 text-md text-center ${
               status.includes("successfully")
                 ? "text-green-500"
                 : "text-red-500"
@@ -134,18 +145,6 @@ export default function Contact() {
             {status}
           </p>
         )}
-
-        <div className="mt-12 text-center">
-          <p>
-            Or, send us an email directly at{" "}
-            <a
-              href="mailto:donald.fernandez1@gmail.com"
-              className="text-teal-500 underline"
-            >
-              chanceinhellsnoballs@gmail.com
-            </a>
-          </p>
-        </div>
 
         {/* <form
           onSubmit={handleSubmit}
@@ -191,6 +190,6 @@ export default function Contact() {
           </fieldset>
         </form> */}
       </section>
-    </>
+    </div>
   );
 }
