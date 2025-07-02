@@ -104,9 +104,12 @@ nav ul li a:hover {
 .hero {
   background-color: var(--red);
 }
+#about {
+  scroll-margin-top: 80px;
+}
 .footer {
   background: #111;
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   background: 

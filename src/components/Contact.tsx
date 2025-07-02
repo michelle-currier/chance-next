@@ -57,8 +57,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="p-20" id="contact">
-      <section className="max-w-3xl mx-auto pt-6 pb-10">
+    <div className="px-20 py-10" id="contact">
+      <section className="max-w-3xl mx-auto py-6">
         <h1
           className={` ${luckiestGuy} text-3xl font-bold text-center text-teal-600 mb-4`}
         >
@@ -145,50 +145,6 @@ export default function Contact() {
             {status}
           </p>
         )}
-
-        {/* <form
-          onSubmit={handleSubmit}
-          method="POST"
-          //action="/sendemail"
-        >
-          <fieldset>
-            <label>Name</label>
-            <input
-              type="text"
-              id="fullname"
-              name="fullname"
-              value={formData.fullname}
-              placeholder="Please enter your name"
-            />
-
-            <label>Phone</label>
-            <input
-              type="text"
-              name="phone"
-              placeholder="Please enter your phone number"
-            />
-
-            <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Please enter your email"
-            />
-            <label>Your Message</label>
-
-            <textarea
-              placeholder="Your message here..."
-              name="message"
-              id="message"
-            ></textarea>
-            <button
-              type="submit"
-              className="mt-8 bg-gradient-to-r from-pink-500 to-pink-400  text-white font-semibold py-2 px-4 rounded-full inline-flex items-center"
-            >
-              Send
-            </button>
-          </fieldset>
-        </form> */}
       </section>
     </div>
   );
