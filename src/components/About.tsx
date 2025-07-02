@@ -8,26 +8,24 @@ import giveBack from "./../images/giveback.png";
 
 export default function About() {
   return (
-    <section className="m-8">
-      <h2 className={`${luckiestGuy} text-4xl`}>
+    <section id="about" className="mx-auto max-w-7xl w-full px-8 py-16 about">
+      <h2 className={`${luckiestGuy} text-4xl text-teal-700`}>
         Behind the scenes with Kitten and Lou
       </h2>
 
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div>
           <h3>When we're not slingin dat snow for y'all...</h3>
           <Image
             src={kitLou}
             alt="Kitten and Lou in drag/burlesque attire on stage"
-            className="w-full h-100 object-cover"
+            className="h-80 object-cover mb-4"
             loading="eager"
           />
           <h3>...we're full time touring drag/burlesque performers</h3>
         </div>
         <div>
-          <h3 className="content-subhead">
-            Once miss Rona came onto the scene...
-          </h3>
+          <h3>Once miss Rona came onto the scene...</h3>
           <p>
             We found ourselves with no work or income the foreseeable future...
           </p>
@@ -38,7 +36,7 @@ export default function About() {
           </p>
           <Image
             src={porch}
-            className="w-full h-100 object-cover"
+            className="h-64 object-cover"
             loading="eager"
             alt="Kitten and Lou on their old front porch"
           />
@@ -56,7 +54,7 @@ export default function About() {
           </h3>
           <Image
             src={giveBack}
-            className="w-full h-100 object-cover"
+            className="w-full h-64 object-cover"
             alt="a tip jar showcasing where the cause they are supporting weekly"
           />
         </div>
