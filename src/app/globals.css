@@ -107,6 +107,9 @@ nav ul li a:hover {
 #about {
   scroll-margin-top: 80px;
 }
+#contact {
+  scroll-margin-top: 60px;
+}
 .footer {
   background: #111;
   position: static;
